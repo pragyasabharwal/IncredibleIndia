@@ -58,7 +58,7 @@ export default function App() {
           <b>Incredible</b> इंडिया!
         </span>
       </nav>
-      <img src="/indiaa.jpg" alt="c" />
+      <img src="public/indiaa.jpg" alt="c" />
       <div
         style={{
           margin: "3em",

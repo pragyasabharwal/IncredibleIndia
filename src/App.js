@@ -36,6 +36,12 @@ var dataBase = {
     },
     {
       a: "Sarojini Naidu"
+    },
+    {
+      a: "Sundar Pichai"
+    },
+    {
+      a: "Aryabhata"
     }
   ]
 };
@@ -49,7 +55,7 @@ export default function App() {
     setDisplay(noun);
   }
   function bgColor(index) {
-    if (index % 2 !== 0) return "#33C4FF";
+    if (index % 2 !== 0) return "white";
   }
   return (
     <div className="App">
@@ -58,11 +64,12 @@ export default function App() {
           <b>Incredible</b> इंडिया!
         </span>
       </nav>
-      <img src="public/indiaa.jpg" alt="c" />
+      <img src="/indiaa.jpg" alt="c" />
       <div
         style={{
           margin: "3em",
-          fontStyle: "italic"
+          fontStyle: "italic",
+          textShadow: "0.4px 0.4px rgb(32, 30, 30)"
         }}
       >
         India is known for its rich culture and heritage. We bring to you some
@@ -77,12 +84,12 @@ export default function App() {
       {dataBase[display].map((noun, index) => (
         <li
           style={{
-            border: "1px solid black",
+            boxShadow: "2px 2px 1px 1px black",
             borderRadius: "0.5em",
             padding: "2em",
             listStyle: "none",
             width: "25%",
-            boxShadow: "5px 5px 5px gray",
+            // boxShadow: "5px 5px 5px gray",
             display: "inline-block",
             marginLeft: "2em",
             marginRight: "2em",
